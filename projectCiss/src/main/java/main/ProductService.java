@@ -30,7 +30,16 @@ public class ProductService {
 
     public List<Products> getProductsCompanie(String id){
 
-        productsList.stream().filter(t -> t.getId().equals((id))).forEachOrdered(auxList::add);
+        auxList.clear();
+        for(int i = 0; i< productsList.size(); i++){
+
+            Products product = productsList.get(i);
+
+            if (product.getIdActivity().equals(id)){
+                auxList.add(product);
+            }
+        }
+
         return auxList;
     }
 

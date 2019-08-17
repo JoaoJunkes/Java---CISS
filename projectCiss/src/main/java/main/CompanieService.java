@@ -11,8 +11,8 @@ import java.util.List;
 public class CompanieService {
 
     List<Companies> companiesList = new ArrayList<Companies>(Arrays.asList(
-            new Companies("1", "Contrabandos do Zé","DescriptionCompanie 1"),
-            new Companies("2", "Lava-Bike 2 rodas","DescriptionCompanie 2")
+            new Companies("1", "Contrabandos do Zé","DescriptionCompanie 1", "http://"),
+            new Companies("2", "Lava-Bike 2 rodas","DescriptionCompanie 2", "http://")
     ));
 
     public List<Companies> getAllCompanies(){
