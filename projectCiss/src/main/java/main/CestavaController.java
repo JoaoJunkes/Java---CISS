@@ -16,7 +16,7 @@ public class CestavaController {
     @Autowired
     private ProductService productService;
 
-    @RequestMapping("/companie")
+    @RequestMapping("/companies")
     public List<Companies> getAllCompanies(){
         return companieService.getAllCompanies();
     }
@@ -44,7 +44,7 @@ public class CestavaController {
         companieService.deleteCompanie(id);
     }
 
-    @RequestMapping("/product")
+    @RequestMapping("/products")
     public List<Products> getAllProducts(){ return productService.getAllProducts();}
 
     @RequestMapping("/productsComp/{id}")

@@ -1,13 +1,13 @@
-import { CompanieService } from './../companie.service';
+import { CompanieService } from '../companie.service';
 import { Component, OnInit } from '@angular/core';
 
 
 @Component({
-  selector: 'app-companies-list',
-  templateUrl: './companies-list.component.html',
-  styleUrls: ['./companies-list.component.css']
+  selector: 'app-companies',
+  templateUrl: './companies.component.html',
+  styleUrls: ['./companies.component.css']
 })
-export class CompaniesListComponent implements OnInit {
+export class CompaniesComponent implements OnInit {
 
   companies: Array<any>;
 

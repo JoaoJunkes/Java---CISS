@@ -4,15 +4,14 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class CompanieService {
+export class ProductService {
 
-  companiesUrl = 'http://localhost:8080/companies/';
+  productsUrl = 'http://localhost:8080/productsComp/';
 
   constructor(private http: HttpClient) { }
 
-  listar() {
-    return this.http.get<any[]>(`${this.companiesUrl}`);
-
+  listar(id) {
+    return this.http.get<any[]>(`${this.productsUrl}`+id);
+  
   }
-
 }
