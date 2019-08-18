@@ -23,8 +23,15 @@ export class ProductsComponent implements OnInit {
   }
 
   listar(id){
+
     this.productService.listar(id).subscribe(data => this.products = data);
 
+  }
+
+  addCarrinho(id){
+
+    console.log(id);
+    this.productService.addCarrinho(id);
   }
 
 }

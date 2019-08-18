@@ -9,6 +9,11 @@ import { CompanieService } from './companie.service';
 import { ProductsComponent } from './products/products.component';
 import { ProductService } from './product.service';
 
+import {CardModule} from 'primeng/card';
+import {ButtonModule} from 'primeng/button';
+import {ToolbarModule} from 'primeng/toolbar';
+import {ContextMenuModule} from 'primeng/contextmenu';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +23,11 @@ import { ProductService } from './product.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    CardModule,
+    ButtonModule,
+    ToolbarModule,
+    ContextMenuModule
   ],
   providers: [CompanieService,
               ProductService],

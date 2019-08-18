@@ -55,4 +55,25 @@ public class CestavaController {
     public Products getProduct(@PathVariable String id){ return productService.getProduct(id);
     }
 
+    @RequestMapping(method = RequestMethod.POST, value = "/addProductCart/{id}")
+    public void addProductCart(@PathVariable String id){
+
+        productService.addProductCart(id);
+    }
+
+    @RequestMapping(method = RequestMethod.DELETE, value = "/deleteProductCart/{id}")
+    public void deleteProductCart(@PathVariable String id){
+
+        productService.deleteProductCart(id);
+    }
+
+    @RequestMapping(method = RequestMethod.POST, value = "/clearCart")
+    public void clearCart(){
+
+        productService.clearCart();
+    }
+
+    @RequestMapping("/productsCart")
+    public List<Products> getProductsCart(){ return productService.getProductsCart();}
+
 }

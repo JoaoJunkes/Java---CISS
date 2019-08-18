@@ -14,4 +14,9 @@ export class ProductService {
     return this.http.get<any[]>(`${this.productsUrl}`+id);
   
   }
+
+  addCarrinho(id){
+    
+
+  }
 }

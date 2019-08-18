@@ -1,9 +1,19 @@
 <h2>Empresas</h2>
-
 <ul>
     <li *ngFor="let c of companies">
-        {{c.name}}
-    
-        <button routerLink="/products/{{c.id}}">Produtos</button>
+
+        <p-card header={{c.name}} [style]="{width: '360px'}" styleClass="ui-card-shadow">
+            <p-header>
+                <img src="Card" src={{c.linkCompanie}} width="255" height="255">
+            </p-header>
+            <div>{{c.description}}</div>
+            <p-footer>
+                <button pButton type="button" label="Produtos" routerLink="/products/{{c.id}}"></button>
+            </p-footer>
+        </p-card>
+
+        <br>
+        <br>
+
     </li>
 </ul>

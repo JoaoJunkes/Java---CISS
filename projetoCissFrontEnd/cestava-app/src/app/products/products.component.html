@@ -2,7 +2,19 @@
 
 <ul>
     <li *ngFor="let p of products">
-        {{p.name}}
+    
+        <p-card header={{p.name}} [style]="{width: '360px'}" styleClass="ui-card-shadow">
+                <p-header>
+                    <img src="Card" src={{p.linkPhoto}} width="255" height="255">
+                </p-header>
+
+                <p-footer>
+                    <button pButton type="button" label="Adicionar ao carrinho"></button>
+                </p-footer>
+            </p-card>
+    
+            <br>
+            <br>        
     
     </li>
 </ul>
