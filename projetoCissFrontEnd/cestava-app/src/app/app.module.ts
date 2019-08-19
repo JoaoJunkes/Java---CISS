@@ -15,6 +15,7 @@ import {ToolbarModule} from 'primeng/toolbar';
 import {ContextMenuModule} from 'primeng/contextmenu';
 import { CartComponent } from './cart/cart.component';
 import { DetailsCompanieComponent } from './details-companie/details-companie.component';
+import {DataViewModule} from 'primeng/dataview';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { DetailsCompanieComponent } from './details-companie/details-companie.co
     CardModule,
     ButtonModule,
     ToolbarModule,
-    ContextMenuModule
+    ContextMenuModule,
+    DataViewModule
   ],
   providers: [CompanieService,
               ProductService],
