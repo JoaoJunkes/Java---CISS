@@ -9,7 +9,7 @@
                 </p-header>
                 <h2>R$ {{p.price}}</h2>
                 <p-footer>
-                    <button pButton type="button" onclick="addCarrinho()" label="Adicionar ao carrinho"></button>
+                    <button pButton type="button" (click)="addCarrinho(p.id)" label="Adicionar ao carrinho"></button>
                 </p-footer>
             </p-card>
     

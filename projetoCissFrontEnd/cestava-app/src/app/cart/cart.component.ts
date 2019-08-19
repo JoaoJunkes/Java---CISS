@@ -23,10 +23,13 @@ export class CartComponent implements OnInit {
 
   }
 
-  addCarrinho(){
-    alert("Produto adicionado ao carrinho");
+  addCarrinho(id){
     
-    this.cartProductService.addCarrinho(1);
+    this.cartProductService.addCarrinho(id);
+  }
+
+  clearCarrinho(){
+    this.cartProductService.clearCarrinho();
   }
 
 }

@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ProductService {
@@ -68,15 +69,15 @@ public class ProductService {
     }
 
     public void addProductCart(String id) {
-        System.out.println(id);
-        for(int i = 0; i< productsList.size(); i++){
 
-            Products product = productsList.get(i);
 
-            if (product.getId().equals(id)){
-                carrinho.add(product);
-            }
+        Optional<Products> optionalProduct = productsList.stream().filter(prod -> prod.getId().equals(id)).findAny();
+
+        if (optionalProduct.isPresent()) {
+            carrinho.add(optionalProduct.get());
         }
+
+
     }
 
     public void deleteProductCart(String id) {
