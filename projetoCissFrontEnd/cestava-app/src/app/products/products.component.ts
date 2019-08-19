@@ -28,10 +28,4 @@ export class ProductsComponent implements OnInit {
 
   }
 
-  addCarrinho(id){
-
-    console.log(id);
-    this.productService.addCarrinho(id);
-  }
-
 }

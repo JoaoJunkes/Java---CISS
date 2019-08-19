@@ -1,4 +1,4 @@
-<h2>Produtos</h2>
+<h2>Carrinho de compras</h2>
 
 <ul>
     <li *ngFor="let p of products">
@@ -8,9 +8,6 @@
                     <img src="Card" src={{p.linkPhoto}} width="255" height="255">
                 </p-header>
                 <h2>R$ {{p.price}}</h2>
-                <p-footer>
-                    <button pButton type="button" onclick="addCarrinho()" label="Adicionar ao carrinho"></button>
-                </p-footer>
             </p-card>
     
             <br>

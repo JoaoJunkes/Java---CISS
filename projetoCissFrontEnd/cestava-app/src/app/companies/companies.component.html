@@ -5,6 +5,7 @@
         <p-card header={{c.name}} [style]="{width: '360px'}" styleClass="ui-card-shadow">
             <p-header>
                 <img src="Card" src={{c.linkCompanie}} width="255" height="255">
+                <button pButton type="button" label="Detalhes" routerLink="/detailsCompanie/{{c.id}}"></button>
             </p-header>
             <div>{{c.description}}</div>
             <p-footer>

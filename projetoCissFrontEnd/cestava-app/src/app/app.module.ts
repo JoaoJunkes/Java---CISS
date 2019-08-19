@@ -13,12 +13,16 @@ import {CardModule} from 'primeng/card';
 import {ButtonModule} from 'primeng/button';
 import {ToolbarModule} from 'primeng/toolbar';
 import {ContextMenuModule} from 'primeng/contextmenu';
+import { CartComponent } from './cart/cart.component';
+import { DetailsCompanieComponent } from './details-companie/details-companie.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CompaniesComponent,
-    ProductsComponent
+    ProductsComponent,
+    CartComponent,
+    DetailsCompanieComponent
   ],
   imports: [
     BrowserModule,
